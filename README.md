@@ -1,11 +1,6 @@
 <div align="center">
 <h2>SkateFormer: Skeletal-Temporal Transformer for Human Action Recognition (ECCV 2024)</h2>
 
-<div>    
-    <a href='https://sites.google.com/view/jeonghyeokdo/' target='_blank'>Jeonghyeok Do</a>
-    <a href='https://www.viclab.kaist.ac.kr/' target='_blank'>Munchurl Kim</a><sup>†</sup>
-</div>
-
 <div>
     <sup>†</sup>Corresponding author</span>
 </div>

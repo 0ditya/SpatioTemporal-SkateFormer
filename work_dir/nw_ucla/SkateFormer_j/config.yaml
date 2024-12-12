@@ -1,0 +1,79 @@
+# command line: main.py --config ./config/train/nw_ucla/SkateFormer_j.yaml
+
+base_lr: 0.001
+batch_size: 128
+config: ./config/train/nw_ucla/SkateFormer_j.yaml
+device:
+- 0
+eval_interval: 5
+feeder: feeders.feeder_ucla.Feeder
+grad_clip: true
+grad_max: 1.0
+ignore_weights: []
+log_interval: 100
+loss_type: LSCE
+lr_decay_rate: 0.1
+lr_ratio: 0.001
+lr_scheduler: cosine
+min_lr: 1.0e-05
+model: model.SkateFormer.SkateFormer_
+model_args:
+  attn_drop: 0.5
+  drop_path: 0.2
+  head_drop: 0.0
+  index_t: true
+  kernel_size: 7
+  mlp_ratio: 1.0
+  num_classes: 10
+  num_heads: 32
+  num_people: 1
+  num_points: 20
+  rel: true
+  type_1_size:
+  - 8
+  - 4
+  type_2_size:
+  - 8
+  - 5
+  type_3_size:
+  - 8
+  - 4
+  type_4_size:
+  - 8
+  - 5
+model_saved_name: ''
+nesterov: true
+num_epoch: 1
+num_worker: 4
+optimizer: AdamW
+phase: train
+print_log: true
+save_epoch: 30
+save_interval: 1
+save_score: false
+seed: 1
+show_topk:
+- 1
+- 5
+start_epoch: 0
+test_batch_size: 128
+test_feeder_args:
+  data_path: ./data/NW-UCLA/all_sqe/
+  data_type: j
+  label_path: val
+  partition: true
+  repeat: 1
+train_feeder_args:
+  data_path: ./data/NW-UCLA/all_sqe/
+  data_type: j
+  debug: false
+  label_path: train
+  p: 0.5
+  partition: true
+  repeat: 10
+warm_up_epoch: 25
+warmup_lr: 1.0e-07
+warmup_prefix: false
+weight_decay: 0.1
+weights: null
+work_dir: ./work_dir/nw_ucla/SkateFormer_j/

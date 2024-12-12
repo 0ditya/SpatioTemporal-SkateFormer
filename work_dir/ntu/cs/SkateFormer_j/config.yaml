@@ -1,0 +1,109 @@
+# command line: main.py --config ./config/train/ntu_cs/SkateFormer_j.yaml
+
+base_lr: 0.001
+batch_size: 32
+channels:
+- 96
+- 192
+- 384
+- 768
+config: ./config/train/ntu_cs/SkateFormer_j.yaml
+depths:
+- 2
+- 2
+- 6
+- 2
+device:
+- 0
+drop_path: 0.1
+dropout: 0.1
+embed_dim: 96
+eval_epoch: 5
+eval_interval: 5
+feeder: feeders.feeder_ntu.Feeder
+ff_dim: 512
+global_pool: avg
+grad_clip: true
+grad_max: 1.0
+ignore_weights: []
+log_interval: 100
+loss_type: LSCE
+lr_min: 1.0e-06
+lr_scheduler: cosine
+min_lr: 1.0e-05
+model: model.SkateFormer.SkateFormer_
+model_args:
+  attn_drop: 0.5
+  drop_path: 0.2
+  head_drop: 0.0
+  index_t: true
+  kernel_size: 7
+  mlp_ratio: 4.0
+  num_classes: 60
+  num_heads: 32
+  num_people: 2
+  num_points: 24
+  rel: true
+  type_1_size:
+  - 8
+  - 8
+  type_2_size:
+  - 8
+  - 12
+  type_3_size:
+  - 8
+  - 8
+  type_4_size:
+  - 8
+  - 12
+model_saved_name: ''
+nesterov: true
+num_classes: 60
+num_epoch: 1
+num_heads: 8
+num_worker: 4
+optimizer: AdamW
+phase: train
+print_log: true
+save_epoch: 30
+save_interval: 1
+save_score: false
+seed: 1
+show_topk:
+- 1
+- 5
+smoothing: 0.1
+start_epoch: 0
+t_max: 80
+test_batch_size: 32
+test_feeder_args:
+  data_path: ./data/ntu/NTU60_CS.npz
+  debug: false
+  p_interval:
+  - 0.95
+  partition: true
+  split: test
+  thres: 64
+  uniform: true
+  window_size: 64
+train_feeder_args:
+  aug_method: a123489
+  data_path: ./data/ntu/NTU60_CS.npz
+  debug: false
+  inter_p: 0.2
+  intra_p: 0.5
+  p_interval:
+  - 0.5
+  - 1
+  partition: true
+  split: train
+  thres: 64
+  uniform: true
+  window_size: 64
+warm_up_epoch: 25
+warmup_epochs: 5
+warmup_lr: 1.0e-07
+warmup_prefix: false
+weight_decay: 0.1
+weights: null
+work_dir: ./work_dir/ntu/cs/SkateFormer_j/

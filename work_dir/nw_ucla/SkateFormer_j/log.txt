@@ -1,0 +1,131 @@
+[ Tue Nov 19 00:04:12 2024 ] using warm up, epoch: 25
+[ Tue Nov 19 00:11:25 2024 ] using warm up, epoch: 25
+[ Tue Nov 19 00:11:25 2024 ] Parameters:
+{'work_dir': './work_dir/nw_ucla/SkateFormer_j/', 'model_saved_name': './work_dir/nw_ucla/SkateFormer_j/runs', 'config': './config/train/nw_ucla/SkateFormer_j.yaml', 'phase': 'train', 'save_score': False, 'seed': 1, 'log_interval': 100, 'save_interval': 1, 'save_epoch': 30, 'eval_interval': 5, 'print_log': True, 'show_topk': [1, 5], 'feeder': 'feeders.feeder_ucla.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NW-UCLA/all_sqe/', 'label_path': 'train', 'data_type': 'j', 'repeat': 10, 'p': 0.5, 'debug': False, 'partition': True}, 'test_feeder_args': {'data_path': './data/NW-UCLA/all_sqe/', 'label_path': 'val', 'data_type': 'j', 'repeat': 1, 'partition': True}, 'model': 'model.SkateFormer.SkateFormer_', 'model_args': {'num_classes': 10, 'num_people': 1, 'num_points': 20, 'kernel_size': 7, 'num_heads': 32, 'attn_drop': 0.5, 'head_drop': 0.0, 'rel': True, 'drop_path': 0.2, 'type_1_size': [8, 4], 'type_2_size': [8, 5], 'type_3_size': [8, 4], 'type_4_size': [8, 5], 'mlp_ratio': 1.0, 'index_t': True}, 'weights': None, 'ignore_weights': [], 'base_lr': 0.001, 'min_lr': 1e-05, 'warmup_lr': 1e-07, 'warmup_prefix': False, 'warm_up_epoch': 25, 'grad_clip': True, 'grad_max': 1.0, 'device': [0], 'optimizer': 'AdamW', 'lr_scheduler': 'cosine', 'nesterov': True, 'batch_size': 128, 'test_batch_size': 128, 'start_epoch': 0, 'num_epoch': 500, 'weight_decay': 0.1, 'lr_ratio': 0.001, 'lr_decay_rate': 0.1, 'loss_type': 'LSCE'}
+
+[ Tue Nov 19 00:11:25 2024 ] # Parameters: 1925921
+[ Tue Nov 19 00:11:25 2024 ] Training epoch: 1
+[ Tue Nov 19 00:25:56 2024 ] 	Mean training loss: 2.2599.  Mean training acc: 16.31%.
+[ Tue Nov 19 00:25:56 2024 ] 	Learning Rate: 0.0000
+[ Tue Nov 19 00:25:56 2024 ] 	Time consumption: [Data]04%, [Network]96%
+[ Tue Nov 19 00:25:56 2024 ] Training epoch: 2
+[ Tue Nov 19 00:38:26 2024 ] 	Mean training loss: 2.1161.  Mean training acc: 27.07%.
+[ Tue Nov 19 00:38:26 2024 ] 	Learning Rate: 0.0001
+[ Tue Nov 19 00:38:26 2024 ] 	Time consumption: [Data]05%, [Network]95%
+[ Tue Nov 19 00:38:26 2024 ] Training epoch: 3
+[ Tue Nov 19 00:50:38 2024 ] 	Mean training loss: 1.9095.  Mean training acc: 37.95%.
+[ Tue Nov 19 00:50:38 2024 ] 	Learning Rate: 0.0001
+[ Tue Nov 19 00:50:38 2024 ] 	Time consumption: [Data]05%, [Network]95%
+[ Tue Nov 19 00:50:38 2024 ] Training epoch: 4
+[ Tue Nov 19 01:02:43 2024 ] 	Mean training loss: 1.7009.  Mean training acc: 46.72%.
+[ Tue Nov 19 01:02:43 2024 ] 	Learning Rate: 0.0002
+[ Tue Nov 19 01:02:43 2024 ] 	Time consumption: [Data]04%, [Network]96%
+[ Tue Nov 19 01:02:43 2024 ] Training epoch: 5
+[ Tue Nov 19 01:14:47 2024 ] 	Mean training loss: 1.5080.  Mean training acc: 55.50%.
+[ Tue Nov 19 01:14:47 2024 ] 	Learning Rate: 0.0002
+[ Tue Nov 19 01:14:47 2024 ] 	Time consumption: [Data]04%, [Network]96%
+[ Tue Nov 19 01:14:47 2024 ] Training epoch: 6
+[ Tue Nov 19 01:27:32 2024 ] 	Mean training loss: 1.3618.  Mean training acc: 62.29%.
+[ Tue Nov 19 01:27:32 2024 ] 	Learning Rate: 0.0002
+[ Tue Nov 19 01:27:32 2024 ] 	Time consumption: [Data]04%, [Network]96%
+[ Tue Nov 19 01:27:32 2024 ] Training epoch: 7
+[ Tue Nov 19 01:40:43 2024 ] 	Mean training loss: 1.2655.  Mean training acc: 66.80%.
+[ Tue Nov 19 01:40:43 2024 ] 	Learning Rate: 0.0003
+[ Tue Nov 19 01:40:43 2024 ] 	Time consumption: [Data]05%, [Network]95%
+[ Tue Nov 19 01:40:43 2024 ] Training epoch: 8
+[ Tue Nov 19 01:52:21 2024 ] 	Mean training loss: 1.2026.  Mean training acc: 69.01%.
+[ Tue Nov 19 01:52:21 2024 ] 	Learning Rate: 0.0003
+[ Tue Nov 19 01:52:21 2024 ] 	Time consumption: [Data]05%, [Network]95%
+[ Tue Nov 19 01:52:21 2024 ] Training epoch: 9
+[ Tue Nov 19 02:03:56 2024 ] 	Mean training loss: 1.1484.  Mean training acc: 72.24%.
+[ Tue Nov 19 02:03:56 2024 ] 	Learning Rate: 0.0004
+[ Tue Nov 19 02:03:56 2024 ] 	Time consumption: [Data]04%, [Network]96%
+[ Tue Nov 19 02:03:56 2024 ] Training epoch: 10
+[ Tue Nov 19 02:15:33 2024 ] 	Mean training loss: 1.1065.  Mean training acc: 74.15%.
+[ Tue Nov 19 02:15:33 2024 ] 	Learning Rate: 0.0004
+[ Tue Nov 19 02:15:33 2024 ] 	Time consumption: [Data]04%, [Network]96%
+[ Tue Nov 19 02:15:33 2024 ] Training epoch: 11
+[ Tue Nov 19 02:27:12 2024 ] 	Mean training loss: 1.0732.  Mean training acc: 75.53%.
+[ Tue Nov 19 02:27:12 2024 ] 	Learning Rate: 0.0004
+[ Tue Nov 19 02:27:12 2024 ] 	Time consumption: [Data]04%, [Network]96%
+[ Tue Nov 19 02:27:12 2024 ] Training epoch: 12
+[ Tue Nov 19 02:38:49 2024 ] 	Mean training loss: 1.0457.  Mean training acc: 76.68%.
+[ Tue Nov 19 02:38:49 2024 ] 	Learning Rate: 0.0005
+[ Tue Nov 19 02:38:49 2024 ] 	Time consumption: [Data]04%, [Network]96%
+[ Tue Nov 19 02:38:49 2024 ] Training epoch: 13
+[ Tue Nov 19 02:50:26 2024 ] 	Mean training loss: 1.0136.  Mean training acc: 78.58%.
+[ Tue Nov 19 02:50:26 2024 ] 	Learning Rate: 0.0005
+[ Tue Nov 19 02:50:26 2024 ] 	Time consumption: [Data]04%, [Network]96%
+[ Tue Nov 19 02:50:26 2024 ] Training epoch: 14
+[ Tue Nov 19 03:02:08 2024 ] 	Mean training loss: 0.9912.  Mean training acc: 79.25%.
+[ Tue Nov 19 03:02:08 2024 ] 	Learning Rate: 0.0006
+[ Tue Nov 19 03:02:08 2024 ] 	Time consumption: [Data]05%, [Network]95%
+[ Tue Nov 19 03:02:08 2024 ] Training epoch: 15
+[ Tue Nov 19 03:13:42 2024 ] 	Mean training loss: 0.9715.  Mean training acc: 80.20%.
+[ Tue Nov 19 03:13:42 2024 ] 	Learning Rate: 0.0006
+[ Tue Nov 19 03:13:42 2024 ] 	Time consumption: [Data]04%, [Network]96%
+[ Tue Nov 19 03:13:42 2024 ] Training epoch: 16
+[ Tue Nov 19 03:25:14 2024 ] 	Mean training loss: 0.9620.  Mean training acc: 80.75%.
+[ Tue Nov 19 03:25:14 2024 ] 	Learning Rate: 0.0006
+[ Tue Nov 19 03:25:14 2024 ] 	Time consumption: [Data]04%, [Network]96%
+[ Tue Nov 19 03:25:14 2024 ] Training epoch: 17
+[ Tue Nov 19 03:36:49 2024 ] 	Mean training loss: 0.9351.  Mean training acc: 81.82%.
+[ Tue Nov 19 03:36:49 2024 ] 	Learning Rate: 0.0007
+[ Tue Nov 19 03:36:49 2024 ] 	Time consumption: [Data]04%, [Network]96%
+[ Tue Nov 19 03:36:49 2024 ] Training epoch: 18
+[ Tue Nov 19 07:59:50 2024 ] 	Mean training loss: 0.9277.  Mean training acc: 82.49%.
+[ Tue Nov 19 07:59:50 2024 ] 	Learning Rate: 0.0007
+[ Tue Nov 19 07:59:50 2024 ] 	Time consumption: [Data]00%, [Network]100%
+[ Tue Nov 19 07:59:50 2024 ] Training epoch: 19
+[ Tue Nov 19 10:53:52 2024 ] 	Mean training loss: 0.9152.  Mean training acc: 83.62%.
+[ Tue Nov 19 10:53:52 2024 ] 	Learning Rate: 0.0008
+[ Tue Nov 19 10:53:52 2024 ] 	Time consumption: [Data]00%, [Network]100%
+[ Tue Nov 19 10:53:52 2024 ] Training epoch: 20
+[ Tue Nov 19 11:31:28 2024 ] 	Mean training loss: 0.8969.  Mean training acc: 83.86%.
+[ Tue Nov 19 11:31:28 2024 ] 	Learning Rate: 0.0008
+[ Tue Nov 19 11:31:28 2024 ] 	Time consumption: [Data]02%, [Network]98%
+[ Tue Nov 19 11:31:29 2024 ] Training epoch: 21
+[ Tue Nov 19 11:44:34 2024 ] 	Mean training loss: 0.8829.  Mean training acc: 84.34%.
+[ Tue Nov 19 11:44:34 2024 ] 	Learning Rate: 0.0008
+[ Tue Nov 19 11:44:34 2024 ] 	Time consumption: [Data]05%, [Network]95%
+[ Tue Nov 19 11:44:34 2024 ] Training epoch: 22
+[ Tue Nov 19 11:57:51 2024 ] 	Mean training loss: 0.8812.  Mean training acc: 84.87%.
+[ Tue Nov 19 11:57:51 2024 ] 	Learning Rate: 0.0009
+[ Tue Nov 19 11:57:51 2024 ] 	Time consumption: [Data]05%, [Network]95%
+[ Tue Nov 19 11:57:51 2024 ] Training epoch: 23
+[ Tue Nov 19 12:10:53 2024 ] 	Mean training loss: 0.8655.  Mean training acc: 85.06%.
+[ Tue Nov 19 12:10:53 2024 ] 	Learning Rate: 0.0009
+[ Tue Nov 19 12:10:53 2024 ] 	Time consumption: [Data]04%, [Network]96%
+[ Tue Nov 19 12:10:53 2024 ] Training epoch: 24
+[ Tue Nov 19 12:25:00 2024 ] 	Mean training loss: 0.8566.  Mean training acc: 85.61%.
+[ Tue Nov 19 12:25:00 2024 ] 	Learning Rate: 0.0010
+[ Tue Nov 19 12:25:00 2024 ] 	Time consumption: [Data]04%, [Network]96%
+[ Tue Nov 19 12:25:01 2024 ] Training epoch: 25
+[ Sat Nov 23 02:23:23 2024 ] using warm up, epoch: 25
+[ Sat Nov 23 02:23:23 2024 ] Parameters:
+{'work_dir': './work_dir/nw_ucla/SkateFormer_j/', 'model_saved_name': './work_dir/nw_ucla/SkateFormer_j/runs', 'config': './config/train/nw_ucla/SkateFormer_j.yaml', 'phase': 'train', 'save_score': False, 'seed': 1, 'log_interval': 100, 'save_interval': 1, 'save_epoch': 30, 'eval_interval': 5, 'print_log': True, 'show_topk': [1, 5], 'feeder': 'feeders.feeder_ucla.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NW-UCLA/all_sqe/', 'label_path': 'train', 'data_type': 'j', 'repeat': 10, 'p': 0.5, 'debug': False, 'partition': True}, 'test_feeder_args': {'data_path': './data/NW-UCLA/all_sqe/', 'label_path': 'val', 'data_type': 'j', 'repeat': 1, 'partition': True}, 'model': 'model.SkateFormer.SkateFormer_', 'model_args': {'num_classes': 10, 'num_people': 1, 'num_points': 20, 'kernel_size': 7, 'num_heads': 32, 'attn_drop': 0.5, 'head_drop': 0.0, 'rel': True, 'drop_path': 0.2, 'type_1_size': [8, 4], 'type_2_size': [8, 5], 'type_3_size': [8, 4], 'type_4_size': [8, 5], 'mlp_ratio': 1.0, 'index_t': True}, 'weights': None, 'ignore_weights': [], 'base_lr': 0.001, 'min_lr': 1e-05, 'warmup_lr': 1e-07, 'warmup_prefix': False, 'warm_up_epoch': 25, 'grad_clip': True, 'grad_max': 1.0, 'device': [0], 'optimizer': 'AdamW', 'lr_scheduler': 'cosine', 'nesterov': True, 'batch_size': 128, 'test_batch_size': 128, 'start_epoch': 0, 'num_epoch': 100, 'weight_decay': 0.1, 'lr_ratio': 0.001, 'lr_decay_rate': 0.1, 'loss_type': 'LSCE'}
+
+[ Sat Nov 23 02:23:23 2024 ] # Parameters: 1925921
+[ Sat Nov 23 02:23:23 2024 ] Training epoch: 1
+[ Sat Nov 23 02:25:36 2024 ] using warm up, epoch: 25
+[ Sat Nov 23 02:25:36 2024 ] Parameters:
+{'work_dir': './work_dir/nw_ucla/SkateFormer_j/', 'model_saved_name': './work_dir/nw_ucla/SkateFormer_j/runs', 'config': './config/train/nw_ucla/SkateFormer_j.yaml', 'phase': 'train', 'save_score': False, 'seed': 1, 'log_interval': 100, 'save_interval': 1, 'save_epoch': 30, 'eval_interval': 5, 'print_log': True, 'show_topk': [1, 5], 'feeder': 'feeders.feeder_ucla.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NW-UCLA/all_sqe/', 'label_path': 'train', 'data_type': 'j', 'repeat': 10, 'p': 0.5, 'debug': False, 'partition': True}, 'test_feeder_args': {'data_path': './data/NW-UCLA/all_sqe/', 'label_path': 'val', 'data_type': 'j', 'repeat': 1, 'partition': True}, 'model': 'model.SkateFormer.SkateFormer_', 'model_args': {'num_classes': 10, 'num_people': 1, 'num_points': 20, 'kernel_size': 7, 'num_heads': 32, 'attn_drop': 0.5, 'head_drop': 0.0, 'rel': True, 'drop_path': 0.2, 'type_1_size': [8, 4], 'type_2_size': [8, 5], 'type_3_size': [8, 4], 'type_4_size': [8, 5], 'mlp_ratio': 1.0, 'index_t': True}, 'weights': None, 'ignore_weights': [], 'base_lr': 0.001, 'min_lr': 1e-05, 'warmup_lr': 1e-07, 'warmup_prefix': False, 'warm_up_epoch': 25, 'grad_clip': True, 'grad_max': 1.0, 'device': [0], 'optimizer': 'AdamW', 'lr_scheduler': 'cosine', 'nesterov': True, 'batch_size': 128, 'test_batch_size': 128, 'start_epoch': 0, 'num_epoch': 1, 'weight_decay': 0.1, 'lr_ratio': 0.001, 'lr_decay_rate': 0.1, 'loss_type': 'LSCE'}
+
+[ Sat Nov 23 02:25:36 2024 ] # Parameters: 1925921
+[ Sat Nov 23 02:25:36 2024 ] Training epoch: 1
+[ Sat Nov 23 02:37:26 2024 ] 	Mean training loss: 2.2599.  Mean training acc: 16.31%.
+[ Sat Nov 23 02:37:26 2024 ] 	Learning Rate: 0.0000
+[ Sat Nov 23 02:37:26 2024 ] 	Time consumption: [Data]04%, [Network]96%
+[ Sat Nov 23 02:37:26 2024 ] Eval epoch: 1
+[ Sat Nov 23 02:38:00 2024 ] 	Mean test loss of 4 batches: 2.8962106108665466.
+[ Sat Nov 23 02:38:00 2024 ] 	Top1: 10.13%
+[ Sat Nov 23 02:38:00 2024 ] 	Top5: 51.08%
+[ Sat Nov 23 02:38:36 2024 ] Best accuracy: 0.10129310344827586
+[ Sat Nov 23 02:38:36 2024 ] Epoch number: 1
+[ Sat Nov 23 02:38:36 2024 ] Model name: ./work_dir/nw_ucla/SkateFormer_j/
+[ Sat Nov 23 02:38:36 2024 ] Model total number of params: 1925921
+[ Sat Nov 23 02:38:36 2024 ] Weight decay: 0.1
+[ Sat Nov 23 02:38:36 2024 ] Base LR: 0.001
+[ Sat Nov 23 02:38:36 2024 ] Batch Size: 128
+[ Sat Nov 23 02:38:36 2024 ] Test Batch Size: 128
+[ Sat Nov 23 02:38:36 2024 ] seed: 1

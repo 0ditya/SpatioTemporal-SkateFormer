@@ -1,4 +1,4 @@
-<div align="center">
+
 <h2>SkateFormer: Skeletal-Temporal Transformer for Human Action Recognition (ECCV 2024) with a Spatio_Temporal Transformer</h2>
 
 ## Contents

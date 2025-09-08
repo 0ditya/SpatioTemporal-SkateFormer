@@ -1,6 +1,6 @@
 
 <h2>SkateFormer: Skeletal-Temporal Transformer for Human Action Recognition (ECCV 2024) with a Spatio-Temporal Transformer</h2>
-<h2> Final year project for Shiv Nadar University B.Tech made by Harshdeep Singh and Aditya Mukerji under the guidance of Dr.Snehasis Mukherjee</h2>
+<h2> Final year project for Shiv Nadar University B.Tech made by Harshdeep Singh and Aditya Mukerji under the guidance of Dr. Snehasis Mukherjee</h2>
 
 ## Contents
 - [Requirements](#requirements)

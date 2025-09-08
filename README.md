@@ -117,8 +117,6 @@ python main.py --config ./config/test/nw_ucla/SkateFormer_b.yaml
 ## Results
 Please visit our [project page](https://kaist-viclab.github.io/SkateFormer_site/) for more experimental results.
 
-## License
-The source codes including the checkpoint can be freely used for research and education only. Any commercial use should get formal permission from the principal investigator (Prof. Munchurl Kim, mkimee@kaist.ac.kr).
 
 ## Acknowledgement
 This repository is built upon [FMA-Net](https://github.com/KAIST-VICLab/FMA-Net/), with data processing techniques adapted from [SGN](https://github.com/microsoft/SGN) and [HD-GCN](https://github.com/Jho-Yonsei/HD-GCN/).
